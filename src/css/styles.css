@@ -1,0 +1,169 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+body{
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+
+}
+
+
+ header .logo{
+    color: var(--vermelho);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+ header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    color: #fff;
+}
+
+/* filme principal */
+
+.filme-principal{
+    font-size: 1rem;
+    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)100%),url(../img/capa-house.jpg);
+    height:100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.filme-principal .descricao{
+    margin-bottom: 40px;
+}
+.titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.botao{
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    border-radius: 1.5px;
+    transition: .3s ease all;
+    text-align: center;
+    height: 3rem; 
+    position: relative;
+    
+    
+}
+
+
+.botao img{
+
+    height: 1rem;
+    text-align: left;
+    align-items: start;
+    position: absolute;
+   margin-left: -20px;
+   margin-top: -2px;
+    
+}
+
+.botao:hover{
+    cursor: pointer;
+    border: .5px solid #fff;
+    background-color: #fff;
+    color: #000;
+    
+}
+
+svg:hover{
+    fill: black;
+}
+
+
+.filme-principal .container{
+    width: 70%;
+}
+
+.car{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+.car img{
+    height: 300px;
+    width: 300px;
+}
+main{
+    position: relative;
+}
+#carrossel{
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    min-height: 450px;
+    height: auto;
+}
+#carrossel img{
+    height: 500px;
+    margin-top: .15rem;
+    width: 350px;
+}
+#container-carrosel{
+    position: absolute;
+    width: auto;
+    height: 100%;
+    display: inline-flex;
+    gap: .3rem;
+    transition: .6s;
+}
+#container-carrosel #item{
+    position: relative;
+    z-index: 2  ;
+}
+
+#btnleft{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#btnright{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 30px;
+    height: 100%;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 3;
+}
+
+#limitador{
+    position: absolute;
+    margin: 0px 7px;
+    height: 450px;
+    width: 350px;
+    opacity: 1;
+    right: 0;
+}
