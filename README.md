@@ -1,0 +1,2 @@
+-Recrutadores e professores, leiam o comentário fixado ao fim do documento HTML.
+- Copia da Tela de entrada da Netflix feito apenas com HTML, CSS e Javascript.
